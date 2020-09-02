@@ -1,9 +1,12 @@
 <?php
-/*
-Plugin Name: Post Authors
-Description: WordPress assumes only 1 author per post, and that all authors are also users with logins. Neither of these assumptions is helpful when trying to edit a blog that presents works by other authors, who may sometimes be multiple. A solution is to create a custom taxonomy as we do below. This also makes the custom taxonomy visible in the REST API, 
+/**
+* Plugin Name: Post Authors
+* Description: WordPress assumes only 1 author per post, and that all authors are also users with logins. Neither of these assumptions is helpful when trying to edit a blog that presents works by other authors, who may sometimes be multiple. A solution is to create a custom taxonomy, which is all this plugin does. This also makes the custom taxonomy visible in the REST API.
+* Author: Rob Lucas
+* Author URI: https://newleftreview.org
+* Version: 1
+* License: GPL3
 */
-/* Start Adding Functions Below this Line */
 
 // Register Custom Taxonomy
 function custom_taxonomy() {
@@ -44,6 +47,4 @@ function custom_taxonomy() {
 
 }
 add_action( 'init', 'custom_taxonomy', 0 );
-  
-/* Stop Adding Functions Below this Line */
 ?>
