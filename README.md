@@ -12,3 +12,6 @@ This also makes post authors visible in the REST API:
 $curl -H "Accept: application/json" http://<your WordPress installation>/wp-json/wp/v2/post_authors
 $curl -H "Accept: application/json" http://<your WordPress installation>/wp-json/wp/v2/post_authors/<author id>
 ```
+
+## Installation
+Just upload the zip file to your WordPress plugins directory and activate.
